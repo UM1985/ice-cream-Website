@@ -6,3 +6,7 @@
 .font-inria{
     font-family: "Inria Sans" , sans-serif;
 }
+.product_active{
+    background-color: rgb(255, 84, 138);
+    color: white;
+}
