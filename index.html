@@ -20,6 +20,7 @@
     />
     <title>Ice-Cream World</title>
     <link rel="stylesheet" href="input.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
@@ -28,7 +29,8 @@
       <header class="bg-pink-100 w-full">
         <!-- desktop-menu  -->
 
-        <div class="w-[80%] mx-auto flex justify-between py-5">
+        <div class="w-full" id="menubar">
+          <div class="w-[80%] mx-auto flex justify-between py-5">
           <div>
             <h1 class="font-winky text-2xl text-pink-500 font-bold">
               Dessert palace
@@ -64,10 +66,11 @@
             </button>
           </div>
         </div>
+        </div>
 
         <!-- banner-section  -->
         <div class="w-[80%] mx-auto flex justify-between max-h-screen py-10">
-          <div class="w-1/2">
+          <div class="w-1/2 my-20"  data-aos="zoom-in" data-aos-duration="1000">
             <h6 class="font-bold text-xl font-inria">
               Sweet fun,full of milk.
             </h6>
@@ -88,11 +91,11 @@
               Buy Now!
             </button>
           </div>
-          <div class="w-1/3">
+          <div class="w-1/3 my-20">
             <img
               src="./images/delicious-raspberry-chocolate-ice-cream-sundae.png"
               alt="ice-cream img"
-              class="drop-shadow-4xl"
+              class="drop-shadow-4xl" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000"
             />
           </div>
         </div>
@@ -138,14 +141,14 @@
         <div
           class="w-[80%] min-h-screen mx-auto flex justify-between items-center"
         >
-          <div class="w-1/3">
+          <div class="w-1/3" data-aos="fade-right" data-aos-duration="800">
             <img
               src="./images/cone.png"
               alt=""
               class="w-full drop-shadow-2xl drop-shadow-pink-300"
             />
           </div>
-          <div class="w-1/2">
+          <div class="w-1/2" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
             <h1 class="font-winky text-4xl pt-1 font-semibold">Brown Sugar</h1>
             <h1 class="font-winky text-4xl pt-1 font-semibold">
               Oatmeal with <span class="text-purple-700">Berries</span>
@@ -193,8 +196,8 @@
           </div>
 
           <div class="w-full bg-white" id="Products">
-            <div class="flex items-center justify-center gap-10">
-              <div class="w-1/3">
+            <div class="flex items-center justify-center gap-10" data-aos="fade-up" data-aos-duration="800">
+              <div class="w-1/3" >
                 <img
                   src="./images/pista.png"
                   alt="ice-cream img"
@@ -221,6 +224,7 @@
             </div>
             <div
               class="flex items-center justify-center gap-10 flex-row-reverse text-end"
+              data-aos="fade-up" data-aos-duration="800"
             >
               <div class="w-1/3">
                 <img
@@ -247,7 +251,7 @@
                 </button>
               </div>
             </div>
-            <div class="flex items-center justify-center gap-10">
+            <div class="flex items-center justify-center gap-10" data-aos="fade-up" data-aos-duration="800">
               <div class="w-1/3">
                 <img
                   src="./images/pista.png"
@@ -280,9 +284,9 @@
       <!-- Testimonial -->
       <div class="w-full pb-20 bg-white">
         <div class="w-[90%] flex items-center justify-center gap-5">
-          <div class="w-1/3 flex flex-col">
+          <div class="w-1/3 flex flex-col" >
             <div id="testimonial">
-              <div>
+              <div  data-aos="fade-right" data-aos-duration="800">
                 <div class="flex items-center gap-3 font-winky text-lg">
                   <i class="fa fa-user-circle fa-2x text-pink-400"></i>
                   <p>Utkarsh patel</p>
@@ -443,6 +447,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+
   </body>
 </html>
