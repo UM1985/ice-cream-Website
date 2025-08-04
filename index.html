@@ -20,57 +20,102 @@
     />
     <title>Ice-Cream World</title>
     <link rel="stylesheet" href="input.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="overflow-x-hidden">
+
+<!-- mobile menu list -->
+
+<div class="fixed right-0 top-0 bottom-0 bg-pink-100 shadow-2xl z-[100] w-1/3 max-w-1/2 hidden" id="mobile_menubar">
+  <div class="text-end">
+    <i class="fa fa-close text-xl bg-pink-500 p-2 rounded-md text-white cursor-pointer m-5" ></i>
+  </div>
+
+  <div class="flex flex-col gap-5">
+    <a
+                href="#"
+                class="ml-5 font-kenry font-semibold text-pink-500 hover:text-pink-500 pl-5"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500 pl-5"
+                >Products</a
+              >
+              <a
+                href="#"
+                class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500 pl-5"
+                >Testimonial</a
+              >
+              <a
+                href="#"
+                class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500 pl-5"
+                >Contact us</a
+              >
+  </div>
+</div>
+
     <div class="main">
       <header class="bg-pink-100 w-full">
-        <!-- desktop-menu  -->
-
         <div class="w-full" id="menubar">
-          <div class="w-[80%] mx-auto flex justify-between py-5">
-          <div>
-            <h1 class="font-winky text-2xl text-pink-500 font-bold">
-              Dessert palace
-            </h1>
+          <!-- Mobile menu -->
+
+          <div class="w-[80%] md:hidden mx-auto flex justify-between py-5">
+            <div>
+              <h1 class="font-winky text-2xl text-pink-500 font-bold">
+                Dessert palace
+              </h1>
+            </div>
+
+            <div>
+              <i class="fa fa-bars text-pink-400  text-xl"></i>
+            </div>
           </div>
-          <div>
-            <a
-              href="#"
-              class="ml-5 font-kenry font-semibold text-pink-500 hover:text-pink-500"
-              >Home</a
-            >
-            <a
-              href="#"
-              class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500"
-              >Products</a
-            >
-            <a
-              href="#"
-              class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500"
-              >Testimonial</a
-            >
-            <a
-              href="#"
-              class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500"
-              >Contact us</a
-            >
+
+          <!-- desktop-menu  -->
+          <div class="w-[80%] hidden mx-auto md:flex justify-between py-5">
+            <div>
+              <h1 class="font-winky text-2xl text-pink-500 font-bold">
+                Dessert palace
+              </h1>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="ml-5 font-kenry font-semibold text-pink-500 hover:text-pink-500"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500"
+                >Products</a
+              >
+              <a
+                href="#"
+                class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500"
+                >Testimonial</a
+              >
+              <a
+                href="#"
+                class="ml-5 font-kenry font-semibold text-gray-600 hover:text-pink-500"
+                >Contact us</a
+              >
+            </div>
+            <div>
+              <button
+                class="bg-pink-400 text-white px-5 py-2 rounded-md hover:scale-105 duration-300 cursor-pointer shadow-2xl"
+              >
+                Buy Now
+              </button>
+            </div>
           </div>
-          <div>
-            <button
-              class="bg-pink-400 text-white px-5 py-2 rounded-md hover:scale-105 duration-300 cursor-pointer shadow-2xl"
-            >
-              Buy Now
-            </button>
-          </div>
-        </div>
         </div>
 
         <!-- banner-section  -->
         <div class="w-[80%] mx-auto flex justify-between max-h-screen py-10">
-          <div class="w-1/2 my-20"  data-aos="zoom-in" data-aos-duration="1000">
+          <div class="w-1/2 my-20" data-aos="zoom-in" data-aos-duration="1000">
             <h6 class="font-bold text-xl font-inria">
               Sweet fun,full of milk.
             </h6>
@@ -95,7 +140,10 @@
             <img
               src="./images/delicious-raspberry-chocolate-ice-cream-sundae.png"
               alt="ice-cream img"
-              class="drop-shadow-4xl" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000"
+              class="drop-shadow-4xl"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
             />
           </div>
         </div>
@@ -103,7 +151,8 @@
 
       <!-- cards-->
 
-      <div class="contain">
+      <div class="w-full bg-white">
+        <div class="contain">
         <div class="box">
           <i class="fa-solid fa-truck-fast my-3 text-blue-300 text-2xl"></i>
           <h5 class="font-bold text-xl">Free Shipping</h5>
@@ -135,6 +184,7 @@
           </p>
         </div>
       </div>
+      </div>
 
       <!-- banner2 -->
       <div class="bg-pink-100 w-full">
@@ -148,7 +198,12 @@
               class="w-full drop-shadow-2xl drop-shadow-pink-300"
             />
           </div>
-          <div class="w-1/2" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+          <div
+            class="w-1/2"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
             <h1 class="font-winky text-4xl pt-1 font-semibold">Brown Sugar</h1>
             <h1 class="font-winky text-4xl pt-1 font-semibold">
               Oatmeal with <span class="text-purple-700">Berries</span>
@@ -196,8 +251,12 @@
           </div>
 
           <div class="w-full bg-white" id="Products">
-            <div class="flex items-center justify-center gap-10" data-aos="fade-up" data-aos-duration="800">
-              <div class="w-1/3" >
+            <div
+              class="flex items-center justify-center gap-10"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="w-1/3">
                 <img
                   src="./images/pista.png"
                   alt="ice-cream img"
@@ -224,7 +283,8 @@
             </div>
             <div
               class="flex items-center justify-center gap-10 flex-row-reverse text-end"
-              data-aos="fade-up" data-aos-duration="800"
+              data-aos="fade-up"
+              data-aos-duration="800"
             >
               <div class="w-1/3">
                 <img
@@ -251,7 +311,11 @@
                 </button>
               </div>
             </div>
-            <div class="flex items-center justify-center gap-10" data-aos="fade-up" data-aos-duration="800">
+            <div
+              class="flex items-center justify-center gap-10"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <div class="w-1/3">
                 <img
                   src="./images/pista.png"
@@ -284,9 +348,9 @@
       <!-- Testimonial -->
       <div class="w-full pb-20 bg-white">
         <div class="w-[90%] flex items-center justify-center gap-5">
-          <div class="w-1/3 flex flex-col" >
+          <div class="w-1/3 flex flex-col">
             <div id="testimonial">
-              <div  data-aos="fade-right" data-aos-duration="800">
+              <div data-aos="fade-right" data-aos-duration="800">
                 <div class="flex items-center gap-3 font-winky text-lg">
                   <i class="fa fa-user-circle fa-2x text-pink-400"></i>
                   <p>Utkarsh patel</p>
@@ -449,6 +513,5 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-
   </body>
 </html>

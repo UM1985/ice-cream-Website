@@ -285,3 +285,18 @@ menubar.classList.add('bg-white','shadow-md','fixed','z-50')
     menubar.classList.remove('bg-white','shadow-md')
   }
 });
+
+let mobile_menubar = document.querySelector('#mobile_menubar')
+let open_menu = document.querySelector('.fa-bars')
+let close_menu = document.querySelector('.fa-close')
+let main = document.querySelector('.main')
+
+open_menu.addEventListener('click' , ()=>{
+  mobile_menubar.classList.remove('hidden')
+  main.classList.add('brightness-50')
+})
+close_menu.addEventListener('click' , ()=>{
+  mobile_menubar.classList.add('hidden') 
+   main.classList.remove('brightness-50')
+
+})
